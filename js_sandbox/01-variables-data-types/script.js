@@ -47,62 +47,103 @@ console.log(20, 'Hello', true);
 
 //Bai hoc 3: Variables - Biến(luu gia tri)
 
-// `var`, `let`, & `const`
+// // `var`, `let`, & `const`
 
-let firstName = 'John';
-const lastName = 'Doe';
-let age = 30;
+// let firstName = 'John';
+// const lastName = 'Doe';
+// let age = 30;
 
-console.log(age);
+// console.log(age);
 
-// Naming Conventions
-// - Only letters, numbers, underscores and dollar signs
-// - Can't start with a number
+// // Naming Conventions
+// // - Only letters, numbers, underscores and dollar signs
+// // - Can't start with a number
 
-// Multi-Word Formatting
-// firstName = camelCase
-// first_name = underscore
-// FirstName = PascalCase
-// firstname = lowercase
+// // Multi-Word Formatting
+// // firstName = camelCase
+// // first_name = underscore
+// // FirstName = PascalCase
+// // firstname = lowercase
 
-// We can re-assign `let` variables. If you change `age` to use `const`, you will get an error
-age = 31;
-console.log(age);
+// // We can re-assign `let` variables. If you change `age` to use `const`, you will get an error
+// age = 31;
+// console.log(age);
 
-// With let, we can declare a value without assigning a value
-let score;
-score = 1;
-console.log(score);
+// // With let, we can declare a value without assigning a value
+// let score;
+// score = 1;
+// console.log(score);
 
-if (true) {
-  score = score + 1;
-}
+// if (true) {
+//   score = score + 1;
+// }
 
-console.log(score);
+// console.log(score);
 
-const x = 100;
+// const x = 100;
 
-// We can not re-assign a const variable
-// x = 200 // Will result in an error
+// // We can not re-assign a const variable
+// // x = 200 // Will result in an error
 
-// We can still manipulate arrays and objects using const
-const arr = [1, 2, 3, 4];
-arr.push(5);
-console.log(arr);
+// // We can still manipulate arrays and objects using const
+// const arr = [1, 2, 3, 4];
+// arr.push(5);
+// console.log(arr);
+
+// const person = {
+//   name: 'Brad',
+// };
+// person.name = 'John';
+// person.email = 'brad@gmail.com';
+// console.log(person);
+
+// // Declare multiple values at once
+// let a, b, c;
+
+// const d = 10,
+//   e = 20,
+//   f = 30;
+
+// console.log(d);
+// console.log(a);
+
+//Bai hoc 4: data-types
+
+// String
+const firstName = 'Sara';
+
+// Number
+const age = 30;
+const temp = 98.9;
+
+// Boolean
+const hasKids = true;
+
+// Null
+const aptNumber = null;
+
+// Undefined
+// let score;
+const score = undefined;
+
+// Symbol
+const id = Symbol('id');
+
+// BigInt
+const n = 9007199254740991n;
+
+// Các loại tham chiếu
+
+const numbers = [1, 2, 3, 4];
 
 const person = {
   name: 'Brad',
 };
-person.name = 'John';
-person.email = 'brad@gmail.com';
-console.log(person);
 
-// Declare multiple values at once
-let a, b, c;
+function sayHello() {
+  console.log('Hello');
+}
 
-const d = 10,
-  e = 20,
-  f = 30;
+const output = sayHello;
 
-console.log(d);
-console.log(a);
+console.log(output, typeof output);
